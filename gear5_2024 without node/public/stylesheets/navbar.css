@@ -1,0 +1,255 @@
+.navbar{
+    /* background-color: rgb(50, 10, 103); */
+    /* background-color: rgb(27, 3, 59); */
+    background-color: rgb(27, 32, 42);
+    display: flex;
+    height: 78px;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+   
+  
+}
+.nav-left{
+    /* width: 350px; */
+    /* background-color: rgb(93, 9, 172); */
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+.nav-middle{
+    padding-left: 20px;
+    height: 70px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aquamarine; */
+    
+    
+   
+}
+
+.nav-right{
+   width: 250px;
+   /* background-color: rgb(18, 105, 105); */
+   height: 70px;
+   display: flex;
+   align-items: center;
+   
+ 
+}
+
+
+
+.logo-img{
+    /* margin-top: 27px; */
+    width: 160px;
+    margin-left: 40px;
+    margin-right: 26px;
+    /* background-color: blue; */
+}
+.ham-button{
+    background-color:transparent;
+    border: none;
+    margin-left: 21px;
+}
+.ham-button img{
+    width: 43px;
+   
+    /* background-color: blue;
+    */
+}
+
+
+.search-bar{
+
+    height: 34px;
+   
+    border: 2px solid rgb(149, 149, 149);
+
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+    flex: 1;
+    padding-left: 8px;
+
+    font-size: 18px;
+    box-shadow: inset 2px 2px 7px rgba(0, 0, 0, 0.401);
+    
+}
+
+.search-bar::placeholder{
+    font-size: 18px;
+   
+}
+.search-button{
+    width: 50px;
+    height: 40px;
+    border: 2px solid rgb(149, 149, 149);
+    background-color: rgb(201, 69, 3);
+    border-left: none;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+
+    
+}
+
+.search-button img{
+    width: 32px;
+}
+
+.profile{
+    font-family: roboto;
+    height: 100%;
+    width: 100%;
+    color: aliceblue;
+    margin-left: 5px;
+   display: flex;
+   align-items: center;
+  position: relative;
+
+  /* background-color: rgb(228, 203, 203); */
+}
+
+.profile-hello{
+    position: absolute;
+    left: 10px;
+    top: 14px;
+
+}
+
+.profile-greet{
+    height: 20px;
+    /* background-color: aqua; */
+    margin-top: 18px;
+    margin-left: 10px;
+    width: 100px;
+    
+    white-space: nowrap; 
+     
+    overflow: hidden;
+    text-overflow: clip; 
+
+    font-family: roboto;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.profile img{
+    position: absolute;
+    right: 12px;
+    width: 50px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+   
+
+}
+
+
+.profile-pop{
+    /* box-sizing: border-box; */
+    background-color: rgb(255, 255, 255);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 10px;
+    position: absolute;
+    right: -220px;
+    /* right: 0px; */
+    top: 74px;
+    width: 200px;
+    height:min-content;
+    transition: transform ease-in-out .3s;
+
+    /* border: 2px solid rgb(201, 69, 3); */
+    /* border: 2px solid rgb(185, 182, 182); */
+    box-shadow: -2px 2px 30px rgb(110, 109, 109);
+    
+}
+
+
+
+.profile:hover{
+    .profile-pop{
+      transform: translateX(-220px);
+    }
+}
+
+
+.profile-pop-elements{
+    height: 42px;
+   
+    
+}
+
+
+.profile-pop-elements a{
+    text-decoration: none;
+    color: rgb(83, 82, 82);
+    background-color: aqua;
+    
+    
+}
+
+.profile-pop-box{
+    position: relative;
+    box-sizing: border-box;
+    font-weight: 500;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+
+    padding-left: 46px;
+    padding-top: 12px;
+
+    transition: background-color .2s ease-out, border-left .1s ease-in-out;
+
+}
+
+.profile-pop-box .bx{
+    position: absolute;
+    left: 16px;
+    font-size: 20px;
+
+}
+
+.profile-pop-box:hover{
+    background-color: rgb(236, 236, 236);
+    border-left: 4px solid rgb(201, 69, 3);
+}
+
+
+
+
+.cart-img{
+    width: 50px;
+   
+    margin-top: 5px;
+    /* background-color: blue; */
+    
+}
+.cart{
+    /* background-color: aqua; */
+    position: relative;
+     margin-left: 15px;
+    
+    
+}
+
+.cart-value{
+    background-color: rgba(255, 248, 248, 0.993);
+    padding: 2px 0px;
+    /* border: 1px solid white; */
+    border-radius: 17px;
+    color: rgb(0, 0, 0);
+    font-family: roboto ,sans-serif;
+    font-weight: 600;
+    position: absolute;
+    top: -4px;
+    right: 8px;
+    left: 18px;
+    text-align: center;
+
+    
+}
+

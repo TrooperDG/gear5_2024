@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+    padding-top: 110px;
+    padding-left: 120px;
+    padding-right: 20px;
+    background-color: rgb(233, 232, 232);
+
+  
+}
+
+.rupee-symbol{
+    margin-right: 4px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 1px;
+}
+
+
+footer{
+    background-color: rgb(27, 32, 42);
+    margin-left: -30px;
+    margin-right: -23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    color: white;
+    height: 40px;
+    border-bottom:3px solid  rgb(201, 69, 3) ;
+    font-family: roboto, sans-serif;
+    
+
+   
+}
+

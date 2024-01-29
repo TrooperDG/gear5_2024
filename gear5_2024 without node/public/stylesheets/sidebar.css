@@ -1,0 +1,86 @@
+.sidebar{
+    /* background-color: rgba(27, 32, 42, 0.935); */
+    background-color: rgb(49, 55, 67);
+    position: fixed;
+    top: 78px;
+    left: 0px;
+    bottom: 0px;
+    width: 90px;
+    
+    font-family: roboto, sans-serif;
+
+    display: grid;
+    grid-template-rows: 460px 1fr 100px;
+    
+    
+}
+
+.sidebar-tools-container{
+
+    
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items: center;
+
+   /* height: 500px; */
+   
+
+}
+
+/* .sidebar-help {
+   
+
+    
+} */
+
+.sidebar a{
+    text-decoration: none;
+    
+    
+
+}
+
+.sidebar-elements{
+  
+    /* height: 80px; */
+  
+    /* padding-top: 28px; */
+    /* padding-bottom: 10px; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.sidebar-elements img{
+   width: 45px;
+  filter: invert(1);
+  /* padding-bottom: 5px; */
+    
+}
+
+/* .sidebar-elements1{
+    margin-top: 246px;
+    text-decoration: none;
+
+} */
+
+/* .sidebar-elements1 img{
+    width: 50px;
+    padding-bottom: 5px;
+    filter: invert(1);
+} */
+
+.sidebar-text{
+  font-size: 12px;
+  color: white;
+  
+}
+
+.sidebar-help-container {
+   
+padding-top: 20px;
+    
+}

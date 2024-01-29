@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="stylesheets/register.css">
+
+</head>
+<body>
+    <div class="login-wrapper">
+        
+        <div class="login-container">
+            <div class="login-logo">
+                <img src="images/page_images/gear 5 white bg.png" alt="">
+            </div>
+            <h2>Register</h2>
+            <!-- <div class="login-input"> -->
+                <form action="/register" method="POST" >
+                    <div class="namex input-details">
+
+                        <input class="name fname" type="text" placeholder="First name" name="firstName">
+
+                        <input class="name lname" type="text" placeholder="Last name" name="lastName">
+                        <i class='bx bxs-user'></i>
+                    </div>
+
+                    <div class="input-details emailX">
+                        <input type="email" placeholder="Email" name="email">
+                        <i class='bx bxs-envelope'></i>
+                    </div>
+                    <div class="input-details passX">
+                        <input type="password" placeholder="Password" name="password">
+                        <i class='bx bxs-lock' ></i>
+                    </div>
+                    <div class="login-submit">
+                        <button type="submit">Register</button>
+                    </div>
+                </form>
+            <!-- </div> -->
+            <div class="login">
+                Already have an account?
+                <a href="/login">Login</a>
+            </div>
+        </div>
+    </div>
+        
+    
+</body>
+</html>

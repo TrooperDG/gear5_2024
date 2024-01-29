@@ -1,0 +1,151 @@
+
+<div class="navbar">
+    <div class="nav-left">
+        <button  class="ham-button">
+            <img src="images/page_images/hamberger-01.png" alt="">
+        </button>
+        
+        <img class="logo-img" src="images/page_images/gear 5 last-01.png" alt="">
+        
+    </div>
+    <div class="nav-middle">
+        <input class="search-bar" type="text" placeholder="Search">
+
+        <button class="search-button">
+        <img  src="images/page_images/search.svg" alt="">
+        </button>
+
+    </div>
+    <div class="nav-right">
+        <div class="cart">
+                <a href="/checkout">
+                    <img class="cart-img" src="images/page_images/cart last-01.png" alt="">
+
+                    <div class="cart-value js-cart-value"><%= user.cartTotal %></div>
+                </a>
+            
+        </div> 
+        <div class="profile">
+            <div class="profile-flex-greet">
+                <div class="profile-hello">Hello,</div>
+                <div class="profile-greet">
+                 <% if(user){ %>
+                 <%= user.firstName %> <%= user.lastName %>
+                 <% }else{ %>
+                    Sign in...
+                    <% } %>
+                
+                </div>
+            </div>
+           
+            <img src="images/profile img/fb4342e0ac4a24cf8c08d0031174e228.jpg" alt="">
+
+            <div class="profile-pop profile-pop-js">
+            
+                <div class="profile-pop-elements">
+                    <a href="undifined.html">
+                        <div class="profile-pop-box">
+                            <i class='bx bx-user-circle'></i>
+                            Account info</div>
+                    </a>
+                </div>
+                <div class="profile-pop-elements">
+                    <a href="undifined.html">
+                        <div class="profile-pop-box">
+                            <i class='bx bx-bell' ></i>
+                            Notifications</div>
+                    </a>
+                </div>
+                <div class="profile-pop-elements">
+                    <a href="undifined.html">
+                        <div class="profile-pop-box">
+                            <i class='bx bx-purchase-tag'></i>
+                            Coupons</div>
+                    </a>
+                </div>
+                <div class="profile-pop-elements">
+                    <a href="undifined.html">
+                        <div class="profile-pop-box">
+                            <i class='bx bx-package' ></i>
+                            Sell on gear5</div>
+                    </a>
+                </div>
+                <div class="profile-pop-elements">
+                    <a href="undifined.html">
+                        <div class="profile-pop-box">
+                            <i class='bx bx-devices' ></i>
+                            Devices</div>
+                    </a>
+                </div>
+                <div class="profile-pop-elements">
+                    
+                    <% if(user){ %>
+                        <a href="/logout">
+                            <div class="profile-pop-box">
+                                <i class='bx bx-log-out'></i>
+                                Logout
+                            </div>
+                        </a>
+                    <% }else{ %>
+                        <a href="/login">
+                            <div class="profile-pop-box">
+                              <i class='bx bx-log-out'></i>
+                                 Sign in
+                            </div>
+                        </a>
+                    <% } %>   
+
+                </div>
+                
+
+            </div>
+
+        </div>      
+
+    </div>
+</div>
+
+<div class="sidebar">
+    <div class="sidebar-tools-container">
+        
+        <a href="/">
+
+            <div class="sidebar-elements">
+                <img src="images/page_images/home.png" alt="">
+                <div class="sidebar-text">Home</div>
+            </div>
+        </a>
+        <div class="sidebar-elements">
+            <img src="images/page_images/heart-2.png" alt="">
+            <div class="sidebar-text">Wishlisht</div>
+        </div>
+        <div class="sidebar-elements">
+            <img src="images/page_images/filter.png" alt="">
+            <div class="sidebar-text">Filter</div>
+        </div>
+        <a href="/orders">
+
+            <div class="sidebar-elements">
+                <img src="images/page_images/order.png" alt="">
+                <div class="sidebar-text">Order Details</div>
+            </div>
+        </a>
+        
+
+    </div>
+
+    <div class="just for space ">
+        <!-- because i dont know how to sole it right now  -->
+    </div>
+
+    <div class="sidebar-help-container">
+        <div class="sidebar-elements">
+            <img src="images/page_images/support.png" alt="">
+            <div class="sidebar-text">Customar Care</div>
+        </div>
+
+    </div>
+
+    
+</div>
+   

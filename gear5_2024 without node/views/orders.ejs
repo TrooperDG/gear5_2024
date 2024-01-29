@@ -1,0 +1,69 @@
+<%- include('./partials/header.ejs')  %>
+
+<link rel="stylesheet" href="stylesheets/orders.css">
+</head>
+<body>
+
+    <%- include('./partials/nav-side-bar.ejs')  %>
+
+    <% if(cartData){%>
+
+    <h1>Order Placed(<span><%= user.cartTotal %> Items</span>)</h1>
+    <div class="order-status">
+        <div class="status-bar">
+
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+            
+            
+
+        </div>
+
+        <div class="circle circle1"><i class='bx bx-check'></i></div>
+        <div class="circle circle2"></div>
+        <div class="circle circle3"></div>
+        <div class="circle circle4"></div>
+
+        <div class="progress p1">
+            <div>Order recived</div>
+        </div>
+        <div class="progress p2">
+            <div>Ready to ship</div>
+        </div>
+        <div class="progress p3">
+            <div>On the way</div>
+        </div>
+        <div class="progress p4">
+            <div>Deliverd</div>
+        </div>
+        
+    </div>
+
+    <h2>Order Details:</h2>
+
+    <div class="order-grid">
+        <% cartData.forEach(item => { %>
+
+			<div class="order-container">
+				<div class="order-image">
+					<img src= <%= item.productId.image %> alt="">
+				</div>
+				
+				<div class="order-caption">
+					<div class="caption-text"><%= item.productId.name %></div>
+				</div>
+				<div class="order-quantity"> 
+					<div class="order-quantity-text"> Quantity:<%= item.quantity %></div>
+				</div>
+				
+			</div>
+        <% }); %>
+    </div>
+
+    <% } %>
+
+
+    <%- include('./partials/nav-side-bar.ejs')  %>
+</body>
+</html>

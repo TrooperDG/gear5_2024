@@ -1,0 +1,61 @@
+
+<%- include('./partials/header.ejs')  %>
+
+<link rel="stylesheet" href="stylesheets/products.css">
+</head>
+
+<body>
+
+
+<%- include('./partials/nav-side-bar.ejs')  %>
+       
+
+       
+    <!-- <div class="product-container js-product-container"> 
+            
+    </div> -->
+    <div class="product-container"> 
+       <%   products.forEach(product => {   %>
+ 
+            <div class="product"> 
+                <div class="product-image">
+                    <img src="<%= product.image %>" alt="">
+                </div>
+
+                <div class="product-details-container">
+                    <div class="product-name-container">
+                        <div class="product-name"><%= product.name %></div>
+                    </div>
+                        <div class="product-review">
+
+                            <div class="product-review-stars">
+                                <img src="images/ratings/rating-<%= product.review.stars*10 %>.png" alt="">
+                            </div>
+                            <div class="product-review-count"><%= product.review.count %></div>
+
+                        </div>
+                        <div class= "product-price-container">
+                            <div class="rupee-symbol"> &#8377 </div>
+                            <div class="product-price"><%= product.price %> </div>
+                        </div>
+                    <div class="product-addToCart-container">
+                        <button class="addToCart-button js-addToCart-button"  data-product-id=<%= product._id %>>Add To Cart</button>
+                        
+                    </div>
+                </div>
+            </div>
+        <% }); %>
+      
+    </div>
+
+
+    <!-- <script src="data/cart.js"></script> -->
+    <!-- <script src="data/product_data.js"></script> -->
+
+    <%- include('./partials/footer.ejs')  %>
+
+
+    <script type="module" src="javascripts/gear5.js"></script>
+
+</body>
+</html>
